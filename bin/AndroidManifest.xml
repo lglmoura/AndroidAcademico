@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.iff.campos.terminalmobileiff"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.iff.campos.terminalmobileiff.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.iff.campos.terminalmobileiff.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="academico.ACAO_EXIBIR_MENU_PRINCIPAL" />
+
+                <category android:name="academico.CATEGORIA_MENU_PRINCIPAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.iff.campos.terminalmobileiff.ConsultaAlunoActivity"
+            android:label="@string/title_activity_consulta_aluno" >
+        </activity>
+        <activity
+            android:name="br.iff.campos.terminalmobileiff.ConsultaNotaFrequenciaActivity"
+            android:label="@string/title_activity_consulta_nota_frequencia" >
+            <intent-filter>
+                <action android:name="academico.ACAO_EXIBIR_CONSULTAR_NOTAS" />
+
+                <category android:name="academico.CATEGORIA_CONSULTAR_NOTAS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.iff.campos.terminalmobileiff.NotasFrequenciaEditActivity"
+            android:label="@string/title_activity_notas_frequencia_edit" >
+        </activity>
+    </application>
+
+</manifest>

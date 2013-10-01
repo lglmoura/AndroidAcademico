@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+conNF/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff347c12"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/txvCurso"
+            android:textSize="23sp" />
+
+        <Spinner
+            android:id="@+conNF/sp_cursos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/txvDisciplina"
+            android:textSize="23sp" />
+
+        <Spinner
+            android:id="@+conNF/sp_diciplinas"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp" />
+
+        <TextView
+            android:id="@+conNF/txvTitulo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/txvTitulo"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+conNF/headernf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff347c12"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+conNF/item1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:height="30dip"
+            android:width="20dip" />
+
+        <TextView
+            android:id="@+conNF/item2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:height="30dip"
+            android:text="Nome"
+            android:width="100dip" />
+
+        <TextView
+            android:id="@+conNF/item3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:height="30dip"
+            android:text="Media"
+            android:width="100dip" />
+
+        <TextView
+            android:id="@+conNF/item4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:height="30dip"
+            android:text="Faltas"
+            android:width="100dip" />
+    </LinearLayout>
+
+    <!-- List Divider -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+
+    <!-- ListView (grid_items) -->
+
+    <LinearLayout
+        android:id="@+conNF/layoutnf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+conNF/listviewnf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+conNF/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar" />
+    </LinearLayout>
+
+</LinearLayout>

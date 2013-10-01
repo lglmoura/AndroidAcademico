@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff347c12"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@id/imageView1"
+            android:layout_width="276dp"
+            android:layout_height="147dp"
+            android:contentDescription="@string/image_iff"
+            android:src="@drawable/ic_iff3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layProfessor"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:background="#ff347c12"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txvProfessor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Professor: "
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/txvNameProfesso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="27sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+main/btnConsultaAluno"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:text="Consultar Aluno" />
+
+        <Button
+            android:id="@+main/btnConsultaNotasFrequencia"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:text="Notas e Faltas" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bntSair"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:text="Sair" />
+    </LinearLayout>
+
+</LinearLayout>

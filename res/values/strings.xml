@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TerminalMobileIFF</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">Menu Principal</string>
+    <string name="image_iff">IFF</string>
+    <string name="title_activity_consulta_aluno">Consulta Aluno</string>
+    <string name="title_activity_consulta_nota_frequencia">Consulta de  Nota e Frequencia</string>
+    <string name="txvTitulo">Listagem de Alunos</string>
+    <string name="txvDisciplina">Disciplinas</string>
+
+    <string-array name="ADisciplinas">
+        <item>POOA</item>
+        <item>Geografia</item>
+        <item>Fisica</item>
+    </string-array>
+    <string-array name="ACursos">
+        <item>BSI</item>
+        <item>Engenharia</item>
+        <item>Tecnico em Informática</item>
+    </string-array>
+
+    <string name="txvCurso">Curso</string>
+    <string name="title_activity_notas_frequencia_edit">Editar Notas e Frequencia</string>
+
+</resources>

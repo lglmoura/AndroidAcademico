@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff347c12"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txvProfessor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Matrícula"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/etMatricula"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvNomeProfessor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Senha"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/etSenha"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" >
+
+        <Button
+            android:id="@+id/bEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar" />
+
+        <Button
+            android:id="@+id/bLimpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpar" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="172dp"
+        android:layout_height="158dp"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_iff3" />
+
+</RelativeLayout>
